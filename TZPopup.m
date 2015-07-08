@@ -216,12 +216,12 @@ UIScrollView *_scrollview;
     
     
     
-    CGFloat rotatePercent = ROTATION_DEGREE - ((ROTATION_DEGREE * (percentageVerticalOffset * 100)) / 100);
-    CATransform3D t = CATransform3DIdentity;
-    t.m34 = 1.0/ -500;
-    t = CATransform3DRotate(t, rotatePercent * M_PI / 180.0f, 1, 0, 0);
-    _tempVC.view.layer.transform = t;
-     
+//    CGFloat rotatePercent = ROTATION_DEGREE - ((ROTATION_DEGREE * (percentageVerticalOffset * 100)) / 100);
+//    CATransform3D t = CATransform3DIdentity;
+//    t.m34 = 1.0/ -500;
+//    t = CATransform3DRotate(t, rotatePercent * M_PI / 180.0f, 1, 0, 0);
+//    _tempVC.view.layer.transform = t;
+//     
     
 }
 

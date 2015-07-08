@@ -16,9 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WYf-ls-b8U">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGX-Bi-mof">
-                                <rect key="frame" x="95" y="269" width="130" height="30"/>
+                                <rect key="frame" x="82.5" y="247.5" width="155" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Pop viewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -28,8 +33,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WYf-ls-b8U" secondAttribute="bottom" id="G9J-EK-bsd"/>
                             <constraint firstAttribute="centerX" secondItem="FGX-Bi-mof" secondAttribute="centerX" id="GDe-O9-CNL"/>
-                            <constraint firstAttribute="centerY" secondItem="FGX-Bi-mof" secondAttribute="centerY" id="MBe-ON-0Rc"/>
+                            <constraint firstAttribute="centerY" secondItem="FGX-Bi-mof" secondAttribute="centerY" constant="20" id="MBe-ON-0Rc"/>
+                            <constraint firstItem="WYf-ls-b8U" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="O3O-ba-T3P"/>
+                            <constraint firstItem="WYf-ls-b8U" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="cpZ-Uc-E4q"/>
+                            <constraint firstAttribute="trailing" secondItem="WYf-ls-b8U" secondAttribute="trailing" id="t74-NA-PUS"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -38,4 +47,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="320" height="480"/>
+    </resources>
 </document>
