@@ -17,6 +17,34 @@ TZPopup helps you pop a viewcontroller
 ```
 - OR manually import TZPopup.h, TZPopup.m + UIKit directory into your project
 
+### How to use
+
+First you want to import the library into your viewController
+```objective-c
+#import <TZPopup.h>
+```
+For now the library is using a singleton pattern to modify it's properties, so just go ahead and set wathever public properties you want
+```objective-c
+//Init general properties of popup
+[[TZPopup shared] setBackgroundColor:[UIColor blackColor]];
+[[TZPopup shared] setBackgroundMaxAlpha:50.f];
+[[TZPopup shared] setPopAnimation:TZPopAnimationBottom];
+[[TZPopup shared] setBlurEnabled:YES];
+```
+
+when you are ready to pop your viewController, 3 lines:
+
+```objective-c
+//Init delegate
+[[TZPopup shared] setDelegate:self];
+    
+//Init the uiviewcontroller you want to pop
+TZPopupViewController *viewControllerToPop = [[TZPopupViewController alloc] initWithNibName:@"TZPopupViewController" bundle:nil];
+    
+//Show popup
+[TZPopup showPopup:viewControllerToPop incontroller:self];
+```
+
 
 ### Delegates (optionals)
 ```objective-c
