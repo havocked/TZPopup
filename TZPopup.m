@@ -49,13 +49,15 @@ UIScrollView *_scrollview;
 
 - (void) showPopup:(UIViewController *)viewcontrollerToShow incontroller:(UIViewController *)parentController {
     
-#warning TODO: to remove TEMPVC
+// TODO: to remove TEMPVC
     _tempVC = viewcontrollerToShow;
     
     //Scrollview is the container of the popup
     //Will take the frame of the parentViewController
-    #warning TODO: Use constraints instead
+
+// TODO: Use constraints instead
     _scrollview = [[UIScrollView alloc] initWithFrame:parentController.view.frame];
+     _tempVC.view.frame = parentController.view.frame;
     
     if (_blurEnabled) {
         _blurView = [[FXBlurView alloc] init];
@@ -70,7 +72,6 @@ UIScrollView *_scrollview;
     [_scrollview addSubview:_tempVC.view];
     _scrollview.pagingEnabled = YES;
     
-    _tempVC.view.frame = parentController.view.frame;
     CGRect frame = _tempVC.view.frame;
     switch (_popAnimation) {
         case TZPopAnimationBottom:
@@ -196,11 +197,11 @@ UIScrollView *_scrollview;
     CGFloat currentVerticalOffset = scrollView.contentOffset.y;
     
     // horizontal
-    CGFloat maximumHorizontalOffset = scrollView.contentSize.width - CGRectGetWidth(scrollView.frame);
-    CGFloat currentHorizontalOffset = scrollView.contentOffset.x;
+    //CGFloat maximumHorizontalOffset = scrollView.contentSize.width - CGRectGetWidth(scrollView.frame);
+    //CGFloat currentHorizontalOffset = scrollView.contentOffset.x;
     
     // percentages
-    CGFloat percentageHorizontalOffset = currentHorizontalOffset / maximumHorizontalOffset;
+    //CGFloat percentageHorizontalOffset = currentHorizontalOffset / maximumHorizontalOffset;
     CGFloat percentageVerticalOffset = currentVerticalOffset / maximumVerticalOffset;
     
     //NSLog(@"HORIZONTAL: %f | VERTICAL : %f", percentageHorizontalOffset, percentageVerticalOffset);
