@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TZPopupViewController">
+            <connections>
+                <outlet property="popupView" destination="CIv-uW-qOE" id="ZNK-vu-6nW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7IT-ZQ-JWS">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIv-uW-qOE">
+                            <rect key="frame" x="40" y="100" width="240" height="368"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KingCard" translatesAutoresizingMaskIntoConstraints="NO" id="XBC-yi-PIH">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="368"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLN-QG-qmh">
+                                    <rect key="frame" x="128" y="8" width="104" height="30"/>
+                                    <state key="normal" title="Dismiss Popup">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="dismissButton:" destination="-1" eventType="touchUpInside" id="sEY-e6-LQx"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tLN-QG-qmh" secondAttribute="trailing" constant="8" id="8sv-Cb-44a"/>
+                                <constraint firstItem="XBC-yi-PIH" firstAttribute="top" secondItem="CIv-uW-qOE" secondAttribute="top" id="OIt-7p-3UJ"/>
+                                <constraint firstAttribute="trailing" secondItem="XBC-yi-PIH" secondAttribute="trailing" id="Tqi-BT-w0P"/>
+                                <constraint firstItem="XBC-yi-PIH" firstAttribute="leading" secondItem="CIv-uW-qOE" secondAttribute="leading" id="gdX-P7-F3D"/>
+                                <constraint firstAttribute="bottom" secondItem="XBC-yi-PIH" secondAttribute="bottom" id="tkB-gr-W0I"/>
+                                <constraint firstItem="tLN-QG-qmh" firstAttribute="top" secondItem="CIv-uW-qOE" secondAttribute="top" constant="8" id="vg1-sH-4SJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CIv-uW-qOE" secondAttribute="trailing" constant="40" id="33i-Fx-fjg"/>
+                        <constraint firstAttribute="bottom" secondItem="CIv-uW-qOE" secondAttribute="bottom" constant="100" id="82W-dX-e3X"/>
+                        <constraint firstItem="CIv-uW-qOE" firstAttribute="top" secondItem="7IT-ZQ-JWS" secondAttribute="top" constant="100" id="aO3-ZH-e8J"/>
+                        <constraint firstItem="CIv-uW-qOE" firstAttribute="leading" secondItem="7IT-ZQ-JWS" secondAttribute="leading" constant="40" id="rCJ-fE-mxC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7IT-ZQ-JWS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cey-qd-dOJ"/>
+                <constraint firstAttribute="bottom" secondItem="7IT-ZQ-JWS" secondAttribute="bottom" id="GaU-FU-cU5"/>
+                <constraint firstAttribute="trailing" secondItem="7IT-ZQ-JWS" secondAttribute="trailing" id="Oaf-zw-eqR"/>
+                <constraint firstItem="7IT-ZQ-JWS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QBC-jv-Z2q"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="KingCard" width="160" height="224"/>
+    </resources>
+</document>

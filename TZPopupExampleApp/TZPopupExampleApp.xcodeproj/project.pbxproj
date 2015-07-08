@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83C5D3301B4DB7D5001DBA55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5D32F1B4DB7D5001DBA55 /* main.m */; };
+		83C5D3331B4DB7D5001DBA55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5D3321B4DB7D5001DBA55 /* AppDelegate.m */; };
+		83C5D3361B4DB7D5001DBA55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5D3351B4DB7D5001DBA55 /* ViewController.m */; };
+		83C5D3391B4DB7D5001DBA55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C5D3371B4DB7D5001DBA55 /* Main.storyboard */; };
+		83C5D33B1B4DB7D6001DBA55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C5D33A1B4DB7D6001DBA55 /* Images.xcassets */; };
+		83C5D33E1B4DB7D6001DBA55 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C5D33C1B4DB7D6001DBA55 /* LaunchScreen.xib */; };
+		83C5D34A1B4DB7D6001DBA55 /* TZPopupExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5D3491B4DB7D6001DBA55 /* TZPopupExampleAppTests.m */; };
+		83C5D3561B4DBBD2001DBA55 /* TZPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C5D3541B4DBBD2001DBA55 /* TZPopupViewController.m */; };
+		83C5D3571B4DBBD2001DBA55 /* TZPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83C5D3551B4DBBD2001DBA55 /* TZPopupViewController.xib */; };
+		8E155811A47C68337BC969AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6F35DFCBD8FA3DEC70F250 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83C5D3441B4DB7D6001DBA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83C5D3221B4DB7D5001DBA55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83C5D3291B4DB7D5001DBA55;
+			remoteInfo = TZPopupExampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		347FF8945FF9ED09E667ACC5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3B6F35DFCBD8FA3DEC70F250 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCBCFCEEF3ABE927AB2DB07 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		83C5D32A1B4DB7D5001DBA55 /* TZPopupExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TZPopupExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C5D32E1B4DB7D5001DBA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C5D32F1B4DB7D5001DBA55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83C5D3311B4DB7D5001DBA55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		83C5D3321B4DB7D5001DBA55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		83C5D3341B4DB7D5001DBA55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		83C5D3351B4DB7D5001DBA55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		83C5D3381B4DB7D5001DBA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83C5D33A1B4DB7D6001DBA55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83C5D33D1B4DB7D6001DBA55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		83C5D3431B4DB7D6001DBA55 /* TZPopupExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TZPopupExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C5D3481B4DB7D6001DBA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C5D3491B4DB7D6001DBA55 /* TZPopupExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TZPopupExampleAppTests.m; sourceTree = "<group>"; };
+		83C5D3531B4DBBD2001DBA55 /* TZPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPopupViewController.h; sourceTree = "<group>"; };
+		83C5D3541B4DBBD2001DBA55 /* TZPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPopupViewController.m; sourceTree = "<group>"; };
+		83C5D3551B4DBBD2001DBA55 /* TZPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TZPopupViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83C5D3271B4DB7D5001DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E155811A47C68337BC969AD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C5D3401B4DB7D6001DBA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83C5D3211B4DB7D5001DBA55 = {
+			isa = PBXGroup;
+			children = (
+				83C5D32C1B4DB7D5001DBA55 /* TZPopupExampleApp */,
+				83C5D3461B4DB7D6001DBA55 /* TZPopupExampleAppTests */,
+				83C5D32B1B4DB7D5001DBA55 /* Products */,
+				A1AB9C7A999C277393CB82E9 /* Pods */,
+				F75197D3F0CEAB5451264814 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83C5D32B1B4DB7D5001DBA55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83C5D32A1B4DB7D5001DBA55 /* TZPopupExampleApp.app */,
+				83C5D3431B4DB7D6001DBA55 /* TZPopupExampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83C5D32C1B4DB7D5001DBA55 /* TZPopupExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				83C5D32D1B4DB7D5001DBA55 /* Supporting Files */,
+				83C5D3311B4DB7D5001DBA55 /* AppDelegate.h */,
+				83C5D3321B4DB7D5001DBA55 /* AppDelegate.m */,
+				83C5D3341B4DB7D5001DBA55 /* ViewController.h */,
+				83C5D3351B4DB7D5001DBA55 /* ViewController.m */,
+				83C5D3371B4DB7D5001DBA55 /* Main.storyboard */,
+				83C5D33A1B4DB7D6001DBA55 /* Images.xcassets */,
+				83C5D33C1B4DB7D6001DBA55 /* LaunchScreen.xib */,
+				83C5D3531B4DBBD2001DBA55 /* TZPopupViewController.h */,
+				83C5D3541B4DBBD2001DBA55 /* TZPopupViewController.m */,
+				83C5D3551B4DBBD2001DBA55 /* TZPopupViewController.xib */,
+			);
+			path = TZPopupExampleApp;
+			sourceTree = "<group>";
+		};
+		83C5D32D1B4DB7D5001DBA55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C5D32E1B4DB7D5001DBA55 /* Info.plist */,
+				83C5D32F1B4DB7D5001DBA55 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83C5D3461B4DB7D6001DBA55 /* TZPopupExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				83C5D3491B4DB7D6001DBA55 /* TZPopupExampleAppTests.m */,
+				83C5D3471B4DB7D6001DBA55 /* Supporting Files */,
+			);
+			path = TZPopupExampleAppTests;
+			sourceTree = "<group>";
+		};
+		83C5D3471B4DB7D6001DBA55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83C5D3481B4DB7D6001DBA55 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1AB9C7A999C277393CB82E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				347FF8945FF9ED09E667ACC5 /* Pods.debug.xcconfig */,
+				5BCBCFCEEF3ABE927AB2DB07 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F75197D3F0CEAB5451264814 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B6F35DFCBD8FA3DEC70F250 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83C5D3291B4DB7D5001DBA55 /* TZPopupExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C5D34D1B4DB7D6001DBA55 /* Build configuration list for PBXNativeTarget "TZPopupExampleApp" */;
+			buildPhases = (
+				4C540755A4DEEA9A3F7FCC36 /* Check Pods Manifest.lock */,
+				83C5D3261B4DB7D5001DBA55 /* Sources */,
+				83C5D3271B4DB7D5001DBA55 /* Frameworks */,
+				83C5D3281B4DB7D5001DBA55 /* Resources */,
+				0CE390A4FF3D3A049D2A1CF8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TZPopupExampleApp;
+			productName = TZPopupExampleApp;
+			productReference = 83C5D32A1B4DB7D5001DBA55 /* TZPopupExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83C5D3421B4DB7D6001DBA55 /* TZPopupExampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83C5D3501B4DB7D6001DBA55 /* Build configuration list for PBXNativeTarget "TZPopupExampleAppTests" */;
+			buildPhases = (
+				83C5D33F1B4DB7D6001DBA55 /* Sources */,
+				83C5D3401B4DB7D6001DBA55 /* Frameworks */,
+				83C5D3411B4DB7D6001DBA55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83C5D3451B4DB7D6001DBA55 /* PBXTargetDependency */,
+			);
+			name = TZPopupExampleAppTests;
+			productName = TZPopupExampleAppTests;
+			productReference = 83C5D3431B4DB7D6001DBA55 /* TZPopupExampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83C5D3221B4DB7D5001DBA55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Nataniel Martin";
+				TargetAttributes = {
+					83C5D3291B4DB7D5001DBA55 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					83C5D3421B4DB7D6001DBA55 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 83C5D3291B4DB7D5001DBA55;
+					};
+				};
+			};
+			buildConfigurationList = 83C5D3251B4DB7D5001DBA55 /* Build configuration list for PBXProject "TZPopupExampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83C5D3211B4DB7D5001DBA55;
+			productRefGroup = 83C5D32B1B4DB7D5001DBA55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83C5D3291B4DB7D5001DBA55 /* TZPopupExampleApp */,
+				83C5D3421B4DB7D6001DBA55 /* TZPopupExampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83C5D3281B4DB7D5001DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C5D3391B4DB7D5001DBA55 /* Main.storyboard in Resources */,
+				83C5D33E1B4DB7D6001DBA55 /* LaunchScreen.xib in Resources */,
+				83C5D33B1B4DB7D6001DBA55 /* Images.xcassets in Resources */,
+				83C5D3571B4DBBD2001DBA55 /* TZPopupViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C5D3411B4DB7D6001DBA55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CE390A4FF3D3A049D2A1CF8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C540755A4DEEA9A3F7FCC36 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83C5D3261B4DB7D5001DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C5D3361B4DB7D5001DBA55 /* ViewController.m in Sources */,
+				83C5D3331B4DB7D5001DBA55 /* AppDelegate.m in Sources */,
+				83C5D3301B4DB7D5001DBA55 /* main.m in Sources */,
+				83C5D3561B4DBBD2001DBA55 /* TZPopupViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83C5D33F1B4DB7D6001DBA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C5D34A1B4DB7D6001DBA55 /* TZPopupExampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83C5D3451B4DB7D6001DBA55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83C5D3291B4DB7D5001DBA55 /* TZPopupExampleApp */;
+			targetProxy = 83C5D3441B4DB7D6001DBA55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83C5D3371B4DB7D5001DBA55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C5D3381B4DB7D5001DBA55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83C5D33C1B4DB7D6001DBA55 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83C5D33D1B4DB7D6001DBA55 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83C5D34B1B4DB7D6001DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83C5D34C1B4DB7D6001DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83C5D34E1B4DB7D6001DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347FF8945FF9ED09E667ACC5 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TZPopupExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		83C5D34F1B4DB7D6001DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCBCFCEEF3ABE927AB2DB07 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TZPopupExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		83C5D3511B4DB7D6001DBA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TZPopupExampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZPopupExampleApp.app/TZPopupExampleApp";
+			};
+			name = Debug;
+		};
+		83C5D3521B4DB7D6001DBA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TZPopupExampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TZPopupExampleApp.app/TZPopupExampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83C5D3251B4DB7D5001DBA55 /* Build configuration list for PBXProject "TZPopupExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C5D34B1B4DB7D6001DBA55 /* Debug */,
+				83C5D34C1B4DB7D6001DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C5D34D1B4DB7D6001DBA55 /* Build configuration list for PBXNativeTarget "TZPopupExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C5D34E1B4DB7D6001DBA55 /* Debug */,
+				83C5D34F1B4DB7D6001DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83C5D3501B4DB7D6001DBA55 /* Build configuration list for PBXNativeTarget "TZPopupExampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83C5D3511B4DB7D6001DBA55 /* Debug */,
+				83C5D3521B4DB7D6001DBA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83C5D3221B4DB7D5001DBA55 /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - FXBlurView (1.6.3)
+  - TZPopup (0.0.1):
+    - FXBlurView
+    - TZPopup/UIKit (= 0.0.1)
+  - TZPopup/UIKit (0.0.1):
+    - FXBlurView
+
+DEPENDENCIES:
+  - TZPopup (from `../`)
+
+EXTERNAL SOURCES:
+  TZPopup:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
+  TZPopup: 521330cd2f2de24f64580137371c292c0e098d71
+
+COCOAPODS: 0.37.2

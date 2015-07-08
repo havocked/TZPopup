@@ -28,30 +28,47 @@ typedef NS_ENUM(NSInteger, TZPopAnimation) {
 
 @interface TZPopup : NSObject <UIScrollViewDelegate>
 
+@property (nonatomic, readonly) BOOL isShowing;
+
 @property (nonatomic, strong) FXBlurView *blurView;
+
 @property (nonatomic, weak) UIViewController *tempVC;
+
 
 #pragma mark - Delegate
 @property (nonatomic, weak) id<TZPopupDelegate> delegate;
+
 
 #pragma mark - Popup Public properties
 @property (nonatomic) UIColor   *backgroundColor;
 
 /*! @brief Should be set between 0.f to 100.f (like a percentage: 0% to 100% of alpha) */
 @property (nonatomic) CGFloat   backgroundMaxAlpha;
+
+/*!
+ * @typedef TZPopAnimation
+ * @brief Position from where the popup pops
+ * @constant TZPopAnimationBottom Popup pops from the bottom
+ * @constant TZPopAnimationTop Popup pops from the top
+ * @constant TZPopAnimationRight Popup pops from the right
+ * @constant TZPopAnimationLeft Popup pops from the left
+ */
 @property (nonatomic) TZPopAnimation popAnimation;
+
 @property (nonatomic) BOOL blurEnabled;
+
 
 #pragma mark - Singleton Pattern
 /*! @brief Singleton pattern, open to dicussion on how to show the popup */
 + (instancetype) shared;
+
 
 #pragma mark - Public methods
 
 /*!
  * @discussion Shows the popup with properties setted previously
  * @param viewcontroller The viewController that needs to be shown
- * @param controller The viewController where the popup shows above
+ * @param controller The viewController where the popup shows above, can be self.navigationController
  */
 + (void) showPopup:(UIViewController *)viewcontroller incontroller:(UIViewController *)controller;
 

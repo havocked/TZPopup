@@ -7,11 +7,11 @@
 //
 
 #import "TZPopup.h"
-#import "UIColor+Extend.h"
+#import <UIColor+TZPopup.h>
 
 UIScrollView *_scrollview;
 
-#define ROTATION_DEGREE 90
+#define ROTATION_DEGREE 10
 
 @implementation TZPopup
 
@@ -27,6 +27,7 @@ UIScrollView *_scrollview;
 #pragma mark - Public methods
 
 + (void) showPopup:(UIViewController *)viewcontroller incontroller:(UIViewController *)controller {
+    NSLog(@"show inside");
     [[self shared] showPopup:viewcontroller incontroller:controller];
 }
 
@@ -69,7 +70,7 @@ UIScrollView *_scrollview;
     [_scrollview addSubview:_tempVC.view];
     _scrollview.pagingEnabled = YES;
     
-
+    _tempVC.view.frame = parentController.view.frame;
     CGRect frame = _tempVC.view.frame;
     switch (_popAnimation) {
         case TZPopAnimationBottom:
@@ -102,6 +103,7 @@ UIScrollView *_scrollview;
     [self scrollToPage:1 animated:YES];
     
     //Trigger delegate when popup showed
+    _isShowing = YES;
     if([_delegate respondsToSelector:@selector(popupDidShow)]){
         [_delegate popupDidShow];
     }
@@ -147,6 +149,7 @@ UIScrollView *_scrollview;
         _blurView = nil;
     }
     
+    _isShowing = NO;
     //Trigger delegate when popup dismissed
     if([_delegate respondsToSelector:@selector(popupDidDismiss)]){
         [_delegate popupDidDismiss];
