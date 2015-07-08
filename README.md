@@ -58,7 +58,7 @@ And finally when you want to dismiss the popup
 ```
 
 ### Discussion
-- I'm using [FXBlurView](https://github.com/user/repo/blob/branch/other_file.md) awesome library to enable blurred background
+- I'm using [FXBlurView](https://github.com/nicklockwood/FXBlurView) awesome library to enable blurred background
 - Singleton pattern is used, but maybe it's not good, if you have a better idea, I'm really open to discuss on this matter !
 
 ### Development
