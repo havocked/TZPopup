@@ -23,7 +23,7 @@ First you want to import the library into your viewController
 ```objective-c
 #import <TZPopup.h>
 ```
-For now the library is using a singleton pattern to modify it's properties, so just go ahead and set wathever public properties you want
+For now the library is using a singleton pattern to modify its properties, so just go ahead and set wathever public available properties you want
 ```objective-c
 //Init general properties of popup
 [[TZPopup shared] setBackgroundColor:[UIColor blackColor]];
@@ -45,6 +45,11 @@ TZPopupViewController *viewControllerToPop = [[TZPopupViewController alloc] init
 [TZPopup showPopup:viewControllerToPop incontroller:self];
 ```
 
+And finally when you want to dismiss the popup
+```objective-c
+[TZPopup dismissPopupWithAnimation:YES];
+```
+
 
 ### Delegates (optionals)
 ```objective-c
@@ -52,17 +57,21 @@ TZPopupViewController *viewControllerToPop = [[TZPopupViewController alloc] init
 - (void) popupDidDismiss;
 ```
 
+### Discussion
+- I'm using [FXBlurView](https://github.com/user/repo/blob/branch/other_file.md) awesome library to enable blurred background
+- Singleton pattern is used, but maybe it's not good, if you have a better idea, I'm really open to discuss on this matter !
+
 ### Development
 
-- Want to contribute? Great! Do not hesitate to comment my code ! I will try my best to answer your questions !
-- I'm not an expert and i'm excited to learn some best practices, show me your tricks !
+- Want to contribute? Great! Do not hesitate to add a Issue/Fork/Comment my code ! I will try my best to answer quickly your questions !
+- I'm not an expert and I'm excited to learn some best practices, show me your tricks !
 
 
 ### Todo's
 
  - ~~Put in cocoapods~~
  - Handle landscape orientation
- - add 3dTrasform properties
+ - add 3D Transformation properties
  - Add Top / Left "from" animation 
 
 License
