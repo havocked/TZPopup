@@ -2,7 +2,7 @@
 
 TZPopup helps you pop a viewcontroller
 
-![Demo](http://havocked.github.io/TZPopupExample.gif)
+![Demo](./TZPopupExample.gif)
 
 
 ### Version
