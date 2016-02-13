@@ -10,7 +10,7 @@ TZPopup helps you pop a viewcontroller
 
 ### Installation
 
-- If you are using Cocoapods, insert the line below into your podfile
+- If you are using CocoaPods, insert the line below into your podfile
 
 ```objectivec
     pod 'TZPopup', '~> 0.0.1'
